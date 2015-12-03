@@ -10,12 +10,28 @@
 </header>
 
 <main>
-{% for post in site.posts limit:1 %}
-   {% if post.featured == true %}
+// Emulates `limit:1`
+{% for post in site.posts %}
+    {% if post.featured == true %}
+      {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+      {% if count == '1' %}
 
-     {{ post.title }}
+        {{ post.title }} 
 
-   {% endif %}
+      {% endif %}
+  {% endif %}
+{% endfor %}
+
+// Emulates `limit:2 offset:1`
+{% for post in site.posts %}
+  {% if post.featured == true %}
+    {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
+    {% if counttwo == '2' or counttwo == '3' %}
+
+      {{ post.title }}
+
+    {% endif %}
+  {% endif %}
 {% endfor %}
 
 </main>
