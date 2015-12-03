@@ -10,7 +10,7 @@
 </header>
 
 <main>
-// Emulates `limit:1`
+
 {% for post in site.posts %}
     {% if post.featured == true %}
       {% capture count %}{{ count | plus: '1' }}{% endcapture %}
@@ -21,8 +21,6 @@
       {% endif %}
   {% endif %}
 {% endfor %}
-
-// Emulates `limit:2 offset:1`
 {% for post in site.posts %}
   {% if post.featured == true %}
     {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
