@@ -10,7 +10,14 @@
 </header>
 
 <main>
-{{ content }}
+{% for post in site.posts limit:1 %}
+   {% if post.featured == true %}
+
+     {{ post.title }}
+
+   {% endif %}
+{% endfor %}
+
 </main>
 <footer>
        {% include footer.html %}
