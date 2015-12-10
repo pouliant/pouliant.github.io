@@ -3,7 +3,7 @@ layout : default
 title: contact
 ---
 
-        <div class="row">
+<div class="row">
             
             <div class="col-md-8">
                 <!-- Embedded Google Map -->
