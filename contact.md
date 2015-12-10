@@ -37,24 +37,24 @@ title: contact
 </div>
 <div class="row">
 <div class="col-md-8">
-<h3>Send us a Message</h3>
+<h3>nous écrire</h3>
 <form name="sentMessage" id="contactForm" novalidate>
 <div class="control-group form-group">
 <div class="controls">
-<label>Full Name:</label>
+<label>Nom complet:</label>
 <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
 <p class="help-block"></p>
 </div>
 </div>
 <div class="control-group form-group">
 <div class="controls">
-<label>Phone Number:</label>
+<label>téléphone:</label>
 <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
 </div>
 </div>
 <div class="control-group form-group">
 <div class="controls">
-<label>Email Address:</label>
+<label>adresse e-mail:</label>
 <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
 </div>
 </div>
@@ -65,7 +65,7 @@ title: contact
 </div>
 </div>
 <div id="success"></div>
-<button type="submit" class="btn btn-primary">Send Message</button>
+<button type="submit" class="btn btn-primary">envoyer un message</button>
 </form>
 </div>
 </div>
